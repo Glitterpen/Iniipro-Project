@@ -1,0 +1,269 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Dosis', sans-serif;
+    box-sizing: border-box;
+    background-color:#181a1c;
+    color: white;
+  
+}
+header{
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 10px;
+  background-color: #000000;
+  height: 70px;
+  border-bottom: 1px solid #333;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+
+}
+
+.nav_bar li{
+  display: inline;
+  padding: 0 30PX;
+  text-decoration: none;
+}
+.nav_bar a{
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: .846em;
+  font-weight: 400;
+  line-height: 3.183em;
+  letter-spacing: .273em;
+  text-transform: uppercase;
+}
+
+/****** SLide Show *****/
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.abt-head{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.span-col{
+  color: yellow;
+}
+.abt-vec{
+  margin: 0 auto;
+  padding: ;
+}
+
+.abt-head h1{
+  font-size: 2.436em;
+  font-weight: 300;
+  letter-spacing: .063em;
+  padding: 10px;
+}
+.abt-head h5{
+  padding: 10px;
+}
+
+.skills{
+  width: 100%;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+.skill-name{
+  margin: 20px 0;
+}
+
+.skill-bar{
+  height: 2px;
+  background: #888888;
+}
+
+.skill-per{
+  height: 3px;
+  background-color: yellow;
+  width: 50%;
+}
+
+/* .skill-per::before{
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background-color: rgb(22, 22, 22);
+  color: white;
+  font-size: 12px;
+  border-radius: 4px;
+} */
+
+.abt-content{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(2, 1fr);
+  max-width: 1200px;
+  margin: 0 auto;
+  
+  
+ 
+}
+.abt-heady{
+  grid-column-start: 1;
+  padding: 10px;
+  border-left: yellow solid 1px;
+  height: 100px;
+
+}
+.abt-pari{
+grid-column-start: 1;
+padding: 10;
+}
+.skills{
+ grid-column-start: 2;
+ grid-row: 1;
+}
+
+.serv-content img{
+  width: 80px;
+}
+
+.serv-content{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 1200px;
+  text-align: center;
+  margin: 0 auto ;
+ 
+}
+
+.serv-content div{
+  padding: 12px;;
+}
+
+.portfolio{
+  background-color: #ffcc00;
+  margin-top: 100px;
+  color: #181a1c;
+}
+
+.gal-menu li{
+  display: inline-block;
+  padding: 5px;
+  width: 120px;
+  background-color: #eee;
+  height: 30px;
+  text-align: center;
+  margin: 0 3px;
+ 
+}
+.gal-menu a{
+  text-decoration: none;
+  color: #181a1c;
+}
+.gal-menu li:hover{
+  background-color: #181a1c;
+}
+.gal-menu a:hover{
+  color: #f2f2f2;
+}
+
+.gal-menu{
+  margin: 30px auto;
+
+}
